@@ -2,8 +2,15 @@
 
 {% set currentPage = 'growth-limit' %}
 
+{% block beforeContent %}
+{{ govukBackLink({
+  text: "Back",
+  href: "javascript: window.history.go(-1)"
+}) }}
+{% endblock %}
+
 {% block content %}
-<div class="govuk-grid-row govuk-!-margin-top-7">
+<div class="govuk-grid-row">
 	<div class="govuk-grid-column-full">
 		<h1 class="govuk-heading-xl heading-dashboard" id="provider-name">
 			Apprenticeship funding tracker			
@@ -28,9 +35,9 @@
 							Funding left to spend
 						</h2>
 						<h3 class="govuk-heading-l">
-							£105,000
+							£465,000
 						</h3>
-						<p class="govuk-body-s" style="color:slategray;">Figure last updated on 6 April 2020, 11.52pm.</p>
+						<p class="govuk-body-s" style="color:slategray;">Figure last updated 3.15am on 8 April 2020.</p>
 					</div>
 					
 					<div class="govuk-grid-column-one-half">
@@ -52,7 +59,7 @@
 							Funding spent
 						</h2>
 						<h3 class="govuk-heading-l">
-							£395,000
+							£35,000
 						</h3>				
 					</div>
 				</div>
@@ -60,11 +67,11 @@
 				<div class="govuk-grid-row govuk-!-margin-top-6">
 					<div class="govuk-grid-column-one-half">
 						<h2 class="govuk-heading-m">
-							<a href="#" class="govuk-link govuk-link--no-visited-state">Confirmed</a>
+							<a href="manage-your-apprentices-filtered-view" class="govuk-link govuk-link--no-visited-state">Confirmed</a>
 						</h2>
 						<p class="govuk-body-s" style="color:slategray;">Records that are live or waiting to start.</p>	
 						<h3 class="govuk-heading-m">
-							£375,000
+							£15,000
 						</h3>
 					</div>
 
@@ -78,13 +85,13 @@
 						</h3>
 						<ul class="govuk-list govuk-body-s">
 							<li>
-							  <a class="govuk-link govuk-link--no-visited-state" href="#">Waiting for employer approval</a> <span style="float:right;">£10,000</span>
+							  <a class="govuk-link govuk-link--no-visited-state" href="waiting-for-employer-approval">Waiting for employer approval</a> <span style="float:right;">£10,000</span>
 							</li>
 							<li>
-								<a class="govuk-link govuk-link--no-visited-state" href="#">Ready to review</a> <span style="float:right;">£2,500</span>
+								<a class="govuk-link govuk-link--no-visited-state" href="ready-to-review">Ready to review</a> <span style="float:right;">£5,000</span>
 							</li>
 							<li>
-								<a class="govuk-link govuk-link--no-visited-state" href="#">With transfer sending employers</a> <span style="float:right;">£7,500</span>
+								<a class="govuk-link govuk-link--no-visited-state" href="with-transfer-sending-employers">With transfer sending employers</a> <span style="float:right;">£5,000</span>
 							</li>
 						  </ul>
 					</div>
