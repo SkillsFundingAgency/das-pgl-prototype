@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'Provider Growth Limit (PGL) prototype',
+  serviceName: 'Provider Growth Limit',
 
   // Default port that prototype runs on
   port: '3000',

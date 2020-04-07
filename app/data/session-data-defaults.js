@@ -17,8 +17,26 @@ Example usage:
 
 */
 
+var records = require('./records.json');
+var providerrecords = require('./providerrecords.json');
+var moment = require('moment');
+
 module.exports = {
-
-  // Insert values here
-
+	"current-date": {
+		DDDD: moment().format('DDDD'),
+		D: moment().format('D'),
+		DD: moment().format('DD'),
+		MM: moment().format('MM'),
+		MMM: moment().format('MMM'),
+		MMMM: moment().format('MMM'),
+		YYYY: moment().format('YYYY')
+	},
+	"random-future-date": moment().add(2,'months').startOf('month').format('D MMMM YYYY'),
+	"employer": "BIG COMPANY LTD",
+	"provider-name": "APEX TRAINING LIMITED",
+	"course-name": "Unknown",
+	"records": records,
+	"providerrecords": providerrecords,
+	"name": "Darren Diamond",
+	"agreed-price": "£9,500"
 }
