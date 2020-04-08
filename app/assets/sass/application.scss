@@ -21,3 +21,8 @@ $govuk-assets-path: '/govuk/assets/';
 @import "components/sortable-table";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+.alert-blue {
+    border: 5px solid #005ea5;
+    padding: 20px 15px 15px;
+    margin-top: 30px;
+}

@@ -15,6 +15,15 @@ Review your cohort
 {% block content %}
 <div class="govuk-grid-row">
 	<div class="govuk-grid-column-full">
+		<div class="alert-blue govuk-!-margin-bottom-6">
+			<p class="govuk-heading-m">You are not able to approve these apprentice records</p>
+			<p class="govuk-body">
+				The growth limit will be exceeded if these records are approved.
+			</p>
+			<p class="govuk-body">
+				<a href="growth-limit">View funding tracker</a>
+			</p>
+		</div>
 		<h1 class="govuk-heading-xl govuk-!-margin-bottom-9">
 			Review your cohort
 		</h1>
@@ -45,17 +54,17 @@ Review your cohort
 		<div class="govuk-grid-row">
 			<div class="govuk-grid-column-one-third">
 				<p>
-					<b>Employer:</b> Grooveholding UK Ltd
+					<b>Employer:</b> Red Shoes Limited
 				</p>
 
 				<p>
-					<b>Status:</b> Ready for review
+					<b>Status:</b> With transfer sending employer
 				</p>
 			</div>
 
 			<div class="govuk-grid-column-one-third">
 				<p>
-					<b>Message:</b> No message added
+					<b>Message:</b> Alex, could we get this approved, please? Thanks, Jim.
 				</p>
 			</div>
 		</div>
@@ -66,7 +75,7 @@ Review your cohort
 			{{govukButton({
 				text: "Save and continue",
 				classes: "govuk-!-display-inline-block",
-				href: "review-your-cohort-1-info"
+				href: "#"
 			})}}			
 		</p>
 
@@ -105,16 +114,16 @@ Review your cohort
 			<tbody class="govuk-table__body">
 				<tr class="govuk-table__row">
 					<td class="govuk-table__cell">
-						Devon Buckfast
+						Charlie Bucket
 					</td>
 					<td class="govuk-table__cell">
-						321456789A
+						125436789A
 					</td>
 					<td class="govuk-table__cell">
-						10 Mar 1990
+						25 Jun 2001
 					</td>
 					<td class="govuk-table__cell">
-						April 2020 to May 2022
+						May 2020 to June 2022
 					</td>
 					<td class="govuk-table__cell">
 						£5,000
