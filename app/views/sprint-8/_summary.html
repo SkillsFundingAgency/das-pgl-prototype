@@ -1,10 +1,30 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-full">
-    <h4 class="govuk-heading-s">
+    <!--<h3 class="govuk-heading-m" id="research">
       Research
-    </h4>     
-    <ul class="govuk-list">                        
-      <li><a href="#" class='govuk-link govuk-link--no-visited-state' ></a></li>
+    </h3>-->
+    {{ govukDetails({
+      summaryText: "Sprint design goals",
+      html: "<table class='govuk-table'>                    
+        <thead class='govuk-table__head'>
+          <tr class='govuk-table__row'>
+            <th scope='col' class='govuk-table__header'>What we did</th>
+            <th scope='col' class='govuk-table__header'>Why we did it</th>
+          </tr>
+        </thead>
+        <tbody class='govuk-table__body'>
+          <tr class='govuk-table__row'>
+            <td class='govuk-table__cell'>---</td>
+            <td class='govuk-table__cell'>---</td>
+          </tr>
+        </tbody>
+      </table>"
+    }) }}     
+    <p class="govuk-body govuk-!-font-weight-bold">PEL-443 View my PGL on Provider portal</p>
+    <ul class="govuk-list govuk-list--bullet">                        
+      <li><a href="https://miro.com/app/board/o9J_kuz71qU=/" class="govuk-link govuk-link--no-visited-state">Iterations 1 - 5</a> (Miro)</li>                  
+      <li><a href="https://drive.google.com/open?id=1f2Wu9PTWs4A6eQA0a4iAK6uAw7HOh-TiK4q3nLLJ6rk" class="govuk-link govuk-link--no-visited-state">Design documentation</a> (Google Slides)</li>
+      <li><a href="https://skillsfundingagency.atlassian.net/browse/PEL-443" class="govuk-link govuk-link--no-visited-state">Jira story</a></li>      
     </ul>    
   </div>
 </div>

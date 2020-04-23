@@ -8,30 +8,108 @@
 {% block content %}
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">
-          {{serviceName}} <br>design history          
-        </h1>
-  
-        <div class="govuk-grid-row">
-          <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      {{serviceName}} (PGL)<br>design history          
+    </h1>
         
-            {% include './sprint-9/_summary.html' %}
-        
-            <!--<hr class="govuk-section-break govuk-section-break--xl govuk-!-margin-bottom-9">
-            <br><br><br>
-            <h2 class="govuk-heading-l govuk-!-margin-top-9">
-              Previous design sprints
-            </h2>
-        
-            {% set sprint8Html %}
-            {% include './sprint-8/_summary.html' %}
-            {% endset %} 
-        
-            {% set sprint7Html %}
-            {% include './sprint-7/_summary.html' %}
-            {% endset %}-->
-          </div>
-        </div>
+    {% include './sprint-10/_summary.html' %}
+
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+                
+    <h2 class="govuk-heading-l govuk-!-margin-top-9">
+      Previous sprints
+    </h2>
+
+    {% set sprint9Html %}
+    {% include './sprint-9/_summary.html' %}
+    {% endset %} 
+
+    {% set sprint8Html %}
+    {% include './sprint-8/_summary.html' %}
+    {% endset %} 
+
+    {% set sprint7Html %}
+    {% include './sprint-7/_summary.html' %}
+    {% endset %} 
+
+    {{ govukAccordion({
+      id: "accordion-default",
+      items:
+      [      
+      {
+        heading:
+        {
+          text: "Sprint 9"
+        },
+        content:
+        {
+          html: sprint9Html
+        },
+        summary:
+        {
+          html: '1st &mdash;14th April 2020'
+        }
+      },
+      {
+        heading:
+        {
+          text: "Sprint 8"
+        },
+        content:
+        {
+          html: sprint8Html
+        },
+        summary:
+        {
+          html: '18th &mdash;31st March 2020'
+        }
+      },
+      {
+        heading:
+        {
+          text: "Sprint 7"
+        },
+        content:
+        {
+          html: sprint7Html
+        },
+        summary:
+        {
+          html: '4th &mdash;17th March 2020'
+        }
+      },
+      {
+        heading:
+        {
+          text: "Alpha pre-work"
+        },
+        content:
+        {
+          html: "<ul class='govuk-list govuk-list--bullet'>
+            <li><a href='https://miro.com/app/board/o9J_kvmxcg0=/' class='govuk-link govuk-link--no-visited-state'>Service blueprint</a></li>      
+          </ul>"
+        },
+        summary:
+        {
+          html: '18th February &mdash;3rd March 2020'
+        }
+      }
+      ]
+    }) }}
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-margin-top-9">
+    <h2 class="govuk-heading-l govuk-!-margin-top-9">
+      <br>Design artefacts
+    </h2>
+    <div class="govuk-inset-text">
+      <ul class='govuk-list govuk-list--bullet'>
+        <li><a href='#' class='govuk-link govuk-link--no-visited-state'>User journey map</a> (Miro)</li>
+        <li><a href='#' class='govuk-link govuk-link--no-visited-state'>User research discovery insights</a> (Powerpoint)</li>
+      </ul>
+    </div>
+    <!--<hr class="govuk-section-break--l">-->
   </div>
 </div>
+
 {% endblock %}
