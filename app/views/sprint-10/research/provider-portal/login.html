@@ -1,4 +1,4 @@
-{% extends "layout-account.html" %}
+{% extends "layout.html" %}
 
 {% set currentPage = "login" %}
 
@@ -20,7 +20,6 @@
 		</p>
 
 		<form action="approve-apprentices">
-			{% from "input/macro.njk" import govukInput %}
 			{{ govukInput({
 				label:
 				{
@@ -54,7 +53,6 @@
 			<input type="hidden" value="true" name="loggedIn">
 			<input type="hidden" value="" name="create-account">
 
-			{% from "button/macro.njk" import govukButton %}
 			{{ govukButton({
 				text: "Sign in",
 				href: "growth-limit"
