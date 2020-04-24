@@ -1,0 +1,27 @@
+{% extends "layout_unbranded.html" %}
+
+{% block pageTitle %}
+GOV.UK Prototype kit    
+{% endblock %}
+
+{% block content %}
+<!--<main id="content" role="main" style="text-align: center;">-->
+    <div class="govuk-grid-row">
+        <div class="govuk-grid-column-full">
+          <img src="/public/images/pgl-notification-header.png" width="1280px" id="email">
+          <div style="margin-left: 45%;">
+          <h1 class="govuk-heading-m">Heading.</h1>
+          <p class="govuk-body">
+            Sign into your apprenticeship service account - 
+            <br>
+            <a href="login">https://apprenticeships.service.gov.uk/((URL))</a>
+            <br><br>
+            This is an automated message. Please don't reply to this email.
+            <br><br>
+            Kind regards,
+            <br>
+            Apprenticeship service team
+          </p>
+        </div>
+<!--</main>  -->
+{% endblock %}
