@@ -7,14 +7,52 @@
 
 {% block content %}
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
+  <div class="govuk-grid-column-full-width govuk-!-margin-bottom-9 govuk-!-margin-left-4">
     <h1 class="govuk-heading-xl">
       {{serviceName}} (PGL)<br>design history          
     </h1>
-        
-    {% include './sprint-11/_summary.html' %}
+    <p class="govuk-body">
+      This prototype documents the Alpha phase of the Provider Growth Limit project, Feb &mdash; May 2020.
+    </p>
+    <p class="govuk-body">
+      Provider Growth Limit is envisaged to be a ‘hard’, adjustable and risk-based limit on the amount of apprenticeship training funding that a provider can have committed to them at any one time. This is <a href="https://skillsfundingagency.atlassian.net/wiki/spaces/NDL/pages/1919287413/PGL+overview#Project-context">the full context</a>.
+    </p>
+    <p class="govuk-body">
+      No research was undertaken on any of the designs created during the Alpha phase.
+    </p>
+    <p class="govuk-body">
+      {{ govukDetails({
+        summaryText: "Alpha design goals",
+        html: "<table class='govuk-table'>                    
+          <thead class='govuk-table__head'>
+            <tr class='govuk-table__row'>
+              <th scope='col' class='govuk-table__header'>What we did</th>
+              <th scope='col' class='govuk-table__header'>How and why we did it</th>
+            </tr>
+          </thead>
+          <tbody class='govuk-table__body'>
+            <tr class='govuk-table__row'>
+              <td class='govuk-table__cell'>Assessed impact across the service and created a journey map</td>
+              <td class='govuk-table__cell'>Collaborated with other design teams in the Apprenticeship service, iterated based on discussions and steers given. Wanted to identify all users' touchpoints and therefore uncover needs through research.</td>
+            </tr>
+            <tr class='govuk-table__row'>
+              <td class='govuk-table__cell'>Reviewed design thinking with the team and iterated on these</td>
+              <td class='govuk-table__cell'>Utilised the teams' skillsets to stress-test assumptions and validate assumptions. Regular reviews of design led to multiple iterations of possible solutions.</td>
+            </tr>
+            <tr class='govuk-table__row'>
+              <td class='govuk-table__cell'>Built designs for research</td>
+              <td class='govuk-table__cell'>Designs were created by working with other teams’ knowledge and the assumed user needs taken from the discovery research</td>
+            </tr>
+          </tbody>
+        </table>"
+      }) }}      
+    </p>
 
-    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    
+
+  </div>   
+  <div class="govuk-grid-column-two-thirds">
+    {% include './sprint-11/_summary.html' %}
                 
     <h2 class="govuk-heading-l govuk-!-margin-top-9">
       Previous sprints
@@ -116,14 +154,14 @@
     }) }}
   </div>
 
-  <div class="govuk-grid-column-one-third govuk-!-margin-top-9">
-    <h2 class="govuk-heading-l govuk-!-margin-top-9">
+  <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-l">
       <br>Design artefacts
     </h2>
     <div class="govuk-inset-text">
       <ul class='govuk-list govuk-list--bullet'>
         <li><a href='https://miro.com/app/board/o9J_ktQbeO8=/' class='govuk-link govuk-link--no-visited-state'>User journey map</a></li>
-        <li><a href='https://drive.google.com/open?id=1NSjettC-b3QafZcLd_zVKfqEVNmiJXKW' class='govuk-link govuk-link--no-visited-state'>User research discovery insights</a></li>
+        <li><a href='https://drive.google.com/open?id=1NSjettC-b3QafZcLd_zVKfqEVNmiJXKW' class='govuk-link govuk-link--no-visited-state'>Research discovery insights</a></li>
         <li><a href='https://drive.google.com/open?id=1O09xOm6_ygk38Cj_FbxcKAdGm_1oBDcWfG40InutbrA' class='govuk-link govuk-link--no-visited-state'>Design research analysis</a></li>
       </ul>
     </div>
