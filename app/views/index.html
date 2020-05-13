@@ -11,23 +11,40 @@
     <h1 class="govuk-heading-xl">
       {{serviceName}} (PGL)<br>design history          
     </h1>
-    <p class="govuk-body">
-      This prototype documents the Alpha phase of the Provider Growth Limit project, Feb &mdash; May 2020.
-    </p>
+    <h2 class="govuk-heading-m">
+      What is PGL?
+    </h2>
     <p class="govuk-body">
       Provider Growth Limit is envisaged to be a ‘hard’, adjustable and risk-based limit on the amount of apprenticeship training funding that a provider can have committed to them at any one time. This is <a href="https://skillsfundingagency.atlassian.net/wiki/spaces/NDL/pages/1919287413/PGL+overview#Project-context">the full context</a>.
     </p>
     <p class="govuk-body">
-      No research was undertaken on any of the designs created during the Alpha phase.
+      This documents the Alpha phase of the Provider Growth Limit project, Feb &mdash; May 2020.
     </p>
+    {{ govukWarningText({
+      text: "No user research has been undertaken on any of the designs created during the Alpha phase.",
+      iconFallbackText: "Warning"
+    }) }} 
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <h2 class="govuk-heading-m">
+      Who has worked on this?
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">      
+      <li><a class="govuk-link" href="mailto:helen.dickerson@digital.education.gov.uk">Helen Dickerson</a> &ndash; Content Designer</li>
+      <li><a class="govuk-link" href="mailto:rob.langdon@digital.education.gov.uk">Rob Langdon</a> &ndash; Interaction Designer</li>
+      <li><a class="govuk-link" href="mailto:tom.hall@digital.education.gov.uk">Tom Hall</a> &ndash; Product Owner</li>
+    </ul>
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <h2 class="govuk-heading-m">
+      What have been our design goals and what has been done?
+    </h2>
     <p class="govuk-body">
       {{ govukDetails({
         summaryText: "Alpha design goals",
         html: "<table class='govuk-table'>                    
           <thead class='govuk-table__head'>
             <tr class='govuk-table__row'>
-              <th scope='col' class='govuk-table__header'>What we did</th>
-              <th scope='col' class='govuk-table__header'>How and why we did it</th>
+              <th scope='col' class='govuk-table__header'>What's been done</th>
+              <th scope='col' class='govuk-table__header'>How and why it was done</th>
             </tr>
           </thead>
           <tbody class='govuk-table__body'>
@@ -45,18 +62,47 @@
             </tr>
           </tbody>
         </table>"
-      }) }}      
+      }) }}     
     </p>
-
-    
-
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <h2 class="govuk-heading-m">
+      What would we do next?
+    </h2>
+    {{ govukDetails({
+      summaryText: "Future design goals",
+      html: "<table class='govuk-table'>                    
+        <thead class='govuk-table__head'>
+          <tr class='govuk-table__row'>
+            <th scope='col' class='govuk-table__header'>What could be done</th>
+            <th scope='col' class='govuk-table__header'>Why we would do it</th>
+          </tr>
+        </thead>
+        <tbody class='govuk-table__body'>
+          <tr class='govuk-table__row'>
+            <td class='govuk-table__cell'>Thing #1</td>
+            <td class='govuk-table__cell'>---</td>
+          </tr>
+          <tr class='govuk-table__row'>
+            <td class='govuk-table__cell'>Thing #2</td>
+            <td class='govuk-table__cell'>---</td>
+          </tr>
+        </tbody>
+      </table>"
+    }) }}     
   </div>   
+  
+  <hr class="govuk-section-break--l">
+  
   <div class="govuk-grid-column-two-thirds">
-    {% include './sprint-11/_summary.html' %}
+    {% include './sprint-12/_summary.html' %}
                 
     <h2 class="govuk-heading-l govuk-!-margin-top-9">
       Previous sprints
     </h2>
+
+    {% set sprint11Html %}
+    {% include './sprint-11/_summary.html' %}
+    {% endset %} 
 
     {% set sprint10Html %}
     {% include './sprint-10/_summary.html' %}
@@ -78,6 +124,20 @@
       id: "accordion-default",
       items:
       [      
+      {
+        heading:
+        {
+          text: "Sprint 11"
+        },
+        content:
+        {
+          html: sprint11Html
+        },
+        summary:
+        {
+          html: '29th April &mdash;12th May 2020'
+        }
+      },
       {
         heading:
         {
@@ -164,8 +224,7 @@
         <li><a href='https://drive.google.com/open?id=1NSjettC-b3QafZcLd_zVKfqEVNmiJXKW' class='govuk-link govuk-link--no-visited-state'>Research discovery insights</a></li>
         <li><a href='https://drive.google.com/open?id=1O09xOm6_ygk38Cj_FbxcKAdGm_1oBDcWfG40InutbrA' class='govuk-link govuk-link--no-visited-state'>Design research analysis</a></li>
       </ul>
-    </div>
-    <!--<hr class="govuk-section-break--l">-->
+    </div>    
   </div>
 </div>
 
