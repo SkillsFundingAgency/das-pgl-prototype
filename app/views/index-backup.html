@@ -6,21 +6,14 @@
 
 {% block content %}
 <!-- Main content starts -->
-
- <!-- Full width heading starts -->
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-full">
+  
+  <!-- Full width header section starts -->
+  <div class="govuk-grid-column-full-width govuk-!-margin-bottom-9 govuk-!-margin-left-4">
     <h1 class="govuk-heading-xl">
-      {{serviceName}} (PGL) design history          
+      {{serviceName}} (PGL)<br>design history          
     </h1>
-  </div>
-</div>
- <!-- Full width heading ends -->
-
-  <!-- Two thirds header section starts -->
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">    
-    <h2 class="govuk-heading-m govuk-!-margin-top-6">
+    <h2 class="govuk-heading-m">
       What is PGL?
     </h2>
     <p class="govuk-body">
@@ -29,13 +22,12 @@
     <p class="govuk-body">
       This documents the Alpha phase of the Provider Growth Limit project, Feb &mdash; May 2020.
     </p>
-    
     {{ govukWarningText({
       text: "No user research has been undertaken on any of the designs created during the Alpha phase.",
       iconFallbackText: "Warning"
     }) }} 
-    
-    <h2 class="govuk-heading-m govuk-!-margin-top-6">
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <h2 class="govuk-heading-m">
       Who has worked on this?
     </h2>
     <ul class="govuk-list govuk-list--bullet">      
@@ -43,30 +35,7 @@
       <li><a  class="govuk-link govuk-link--no-visited-state" href="https://skillsfundingagency.atlassian.net/wiki/people/5b18ff545f02415b9f02adf5" title="Link to Rob's profile on Confluence">Rob Langdon</a> &ndash; Interaction Designer</li>
       <li><a  class="govuk-link govuk-link--no-visited-state" href="https://skillsfundingagency.atlassian.net/wiki/people/5c3c843b2020af5dbe864c99" title="Link to Tom's profile on Confluence">Tom Hall</a> &ndash; Product Owner</li>
     </ul>
-  </div>
-  <!-- Two thirds header section ends -->
-
-  <!-- One third header section starts -->
-  <div class="govuk-grid-column-one-third">
-    <h2 class="govuk-heading-m">
-      <br>Design artefacts
-    </h2>
-    <div class="govuk-inset-text">
-      <ul class='govuk-list govuk-list--bullet'>        
-        <li><a href='public/images/pgl-user-journey-map.pdf' class='govuk-link govuk-link--no-visited-state'>User journey map for team (PDF)</a></li>
-        <li><a href='#' class='govuk-link govuk-link--no-visited-state'>User journey map for design team (PDF)</a></li>
-        <li><a href='https://drive.google.com/open?id=1NSjettC-b3QafZcLd_zVKfqEVNmiJXKW' class='govuk-link govuk-link--no-visited-state'>Research discovery insights</a></li>
-        <li><a href='https://drive.google.com/open?id=1O09xOm6_ygk38Cj_FbxcKAdGm_1oBDcWfG40InutbrA' class='govuk-link govuk-link--no-visited-state'>Design research analysis</a></li>
-      </ul>
-    </div>
-  </div>
-  <!-- One third header section ends -->
-</div>
-
-<div class="govuk-grid-row">
-  <!-- Full width header section starts -->
-  <div class="govuk-grid-column-full">
-  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
     <h2 class="govuk-heading-m">
       What have been our design goals and what has been done?
     </h2>
@@ -130,12 +99,11 @@
         </tbody>
       </table>"
     }) }}     
-    <hr class="govuk-section-break--l">
   </div>   
+  
+  <hr class="govuk-section-break--l">
   <!-- Full width header section ends -->
-</div>
 
-<div class="govuk-grid-row">
   <!-- Sprints section starts -->
   <div class="govuk-grid-column-two-thirds">
     {% include './sprint-12/_summary.html' %}
@@ -259,12 +227,23 @@
   </div>
   <!-- Sprints section ends -->
 
-  <!-- One third column starts -->
+  <!-- Design artefacts starts -->
   <div class="govuk-grid-column-one-third">
+    <h2 class="govuk-heading-l">
+      <br>Design artefacts
+    </h2>
+    <div class="govuk-inset-text">
+      <ul class='govuk-list govuk-list--bullet'>        
+        <li><a href='public/images/pgl-user-journey-map.pdf' class='govuk-link govuk-link--no-visited-state'>User journey map for team (PDF)</a></li>
+        <li><a href='#' class='govuk-link govuk-link--no-visited-state'>User journey map for design team (PDF)</a></li>
+        <li><a href='https://drive.google.com/open?id=1NSjettC-b3QafZcLd_zVKfqEVNmiJXKW' class='govuk-link govuk-link--no-visited-state'>Research discovery insights</a></li>
+        <li><a href='https://drive.google.com/open?id=1O09xOm6_ygk38Cj_FbxcKAdGm_1oBDcWfG40InutbrA' class='govuk-link govuk-link--no-visited-state'>Design research analysis</a></li>
+      </ul>
+    </div>    
   </div>
-  <!-- One third column ends -->
+  <!-- Design artefacts ends -->
 
 </div>
-
 <!-- Main content ends -->
+
 {% endblock %}
